@@ -1,10 +1,11 @@
 # DOCKER-CLIENT
-A Docker image with `Docker-client`, `Docker-Compose` and `RDocker` (tool for connecting to docker over ssh)
+A docker image which let you to talk to remote hosts. Why we need it?
+Because if you have CI/CD pipelines on wercker, bitbucket or any other service, you won't have docker inside your testing container (obviously) 
 
 ## Image Contents
 - **docker** cli: `docker run hello-world`
-- *docker-compose*: `docker-compose up`
-- *rdocker*: `rdocker root@REMOTE_HOST "docker build -t IMAGE_NAME .""`
+- **docker-compose**: `docker-compose up`
+- **rdocker**: `rdocker root@REMOTE_HOST "docker build -t IMAGE_NAME .""`
 - curl
 
 ## Usage
