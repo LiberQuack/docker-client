@@ -6,6 +6,8 @@ Because if you have CI/CD pipelines on wercker, bitbucket or any other service, 
 - **docker**: The same and glorious docker client we have on our localhost (if you don't know it... you shouldn't be here)
 - **docker-compose**: Docker compose client
 - **rdocker**: A small tool which let us use remote docker daemons through SSH
+- git
+- curl
 
 ## Usage
 I created this image for helping with Continuous Integration, in the end of my other projects builds I use this image for talking to a remote docker host where I send a `Dockerfile`. Also as we know docker provides a secure connection using TLS and certificates... but we know creating certs is not a fun task

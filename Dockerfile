@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER 'Martins <rogue.thiago@gmail.com>'
 
 RUN apt-get update &&\
-    apt-get install -y curl ssh
+    apt-get install -y curl ssh git
 
 RUN curl "https://get.docker.com/builds/`uname -s`/`uname -m`/docker-latest.tgz" > docker.tgz &&\
     tar -xvzf docker.tgz &&\
